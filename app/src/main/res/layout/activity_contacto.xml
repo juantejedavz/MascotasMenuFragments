@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMascotas">
+
+    <include
+        android:id="@+id/toolDetalle2"
+        layout="@layout/toolbar_detalle"></include>
+
+    <TextView
+        android:id="@+id/TV_contactoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/contactoTitle"
+        android:textColor="@color/primary_text"
+        android:textSize="38sp" />
+
+    <EditText
+        android:id="@+id/ET_nombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:hint="@string/hintNombre"
+        android:textColor="@color/primary_text" />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:hint="@string/hintEmail"
+        android:textColor="@color/primary_text" />
+
+    <EditText
+        android:id="@+id/ET_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="4"
+        android:hint="@string/hintMensaje"
+        android:lines="4"
+        android:textColor="@color/primary_text" />
+
+    <Button
+        android:id="@+id/BT_editarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="enviarComentario"
+        android:padding="22dp"
+        android:text="@string/enviarComment"
+        android:textColor="@color/icons"
+        android:textSize="20dp" />
+
+</LinearLayout>

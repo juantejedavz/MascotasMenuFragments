@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.blogspot.juanmtejedav.mascotasmenufragments.ExtraActivities.AcercaDeActivity">
+
+    <include
+        android:id="@+id/toolDetalle1"
+        layout="@layout/toolbar_detalle"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="Acerca De"
+        android:textColor="@color/accent_material_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/TV_acercaDeTitulo"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/startup_ceo"
+        android:layout_weight="1"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/primary_text"
+        android:text="@string/descripcionCEO"
+        android:autoText="false"
+        android:enabled="false"
+        android:phoneNumber="false"
+        android:textSize="20sp"
+        android:typeface="normal" />
+
+</LinearLayout>
